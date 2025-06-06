@@ -55,7 +55,6 @@ Check Cart Is Empty
     ${exists}=    Run Keyword And Return Status    Page Should Contain Element    //*[@data-test="shopping-cart-badge"]
     Run Keyword If    ${exists}    Element Text Should Be    //*[@data-test="shopping-cart-badge"]    0
     Run Keyword If    not ${exists}    No Operation
-run key
 
 *** Test Cases ***
 Filter Products By Price
